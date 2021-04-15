@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers # the primary container, where your job's commands are run
+
+    steps:
+      - checkout # check out the code in the project directory
+      - run:
+          name: build dependencies
+          command: bundle install
+
+      - run:
+          name: build the jekyll site
+          command: bundle exec jekyll build
+
+      - run:
+          name: print the current time
+          command: date
