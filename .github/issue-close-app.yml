@@ -4,7 +4,8 @@ issueConfigs:
 # There can be several configs for different kind of issues.
 - content:
 # Example 1: bug report
-  - "To Reproduce Steps to reproduce the behavior:"
+  - "Describe the bug"
+  - "To Reproduce"
   - "Expected behavior"
   - "Screenshots"
   - "Desktop"
